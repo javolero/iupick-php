@@ -1,0 +1,13 @@
+{
+    "name": "iupick/iupick",
+    "description": "The iupick php library wraps the iupick API to facilitate access from applications written in server-side php.",
+    "type": "library",
+    "license": "BSD 3-Clause",
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Iupick\\": "lib/"
+        }        
+    }
+}
