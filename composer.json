@@ -4,7 +4,9 @@
     "type": "library",
     "license": "BSD 3-Clause",
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "php": ">=5.3.3"
+    },
     "autoload": {
         "psr-4": {
             "Iupick\\": "lib/"
