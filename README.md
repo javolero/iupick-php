@@ -7,8 +7,12 @@ info@iupick.com for more information.
 
 ## Installation
 
-TODO
+### With Composer
 
+Just run:
+``` sh
+$ php composer.phar require iupick/iupick
+```
 ## Usage
 
 Import the library and add your secret and public tokens.
