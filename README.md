@@ -10,6 +10,7 @@ info@iupick.com for more information.
 ### With Composer
 
 Just run:
+
 ``` sh
 $ php composer.phar require iupick/iupick
 ```
@@ -18,7 +19,9 @@ $ php composer.phar require iupick/iupick
 Import the library and add your secret and public tokens.
 
 ``` php
-require_once 'iupick'
+
+// Include the autoload file from composer
+require_once 'path/to/vendor/autoload.php';
 
 Iupick\Iupick::setSecretToken('sk_sandbox_4bdcd3630417c5119029859c08a7b8d9d97dda79');
 Iupick\Iupick::setPublicToken('315cdf3ca4dd588ab8e6f7fa4b7aa433c641cadd');
@@ -45,14 +48,14 @@ To get a list of all the coordinates of available waypoints, use
 `getWaypointsLite`.
 
 ``` php
-$waypointsLite = Iupick\Waypoints::getWaypointsByPostalCode(76140)
+$waypointsLite = Iupick\Waypoints::getWaypointsByPostalCode(76140);
 ```
 
 You can get all the waypoints close to a Postal Code with
 `getPostalCodeWaypoints`.
 
 ``` php
-$waypointsCP = Iupick\Waypoints::getWayPointsLite())
+$waypointsCP = Iupick\Waypoints::getWayPointsLite();
 ```
 
 ## External Shipments
