@@ -52,9 +52,11 @@ class Iupick
     public static function createAddress(
         string $city,
         string $line_one,
-        string $postal_code,
         string $line_two = '',
-        string $neighborhood = ''
+        string $postal_code,
+        string $neighborhood = '',
+        string $state = '',
+        string $state_code = ''
     ) {
     
         return [
@@ -62,7 +64,13 @@ class Iupick
             'line_one' => $line_one,
             'line_two' => $line_two,
             'neighborhood' => $neighborhood,
-            'postal_code' => $postal_code
+            'postal_code' => [
+                'code' => $postal_code,
+                'state' => [
+                    'name' => $state,
+                    'code' => $state_code
+                ]
+            ]
         ];
     }
 
@@ -73,7 +81,13 @@ class Iupick
             'line_one' => 'Empty',
             'line_two' => 'Empty',
             'neighborhood' => 'Empty',
-            'postal_code' => 'Empty'
+            'postal_code' => [
+                'code' => 'Empty',
+                'state' => [
+                    'name' => 'Empty',
+                    'code' => 'XX'
+                ]
+            ]
         ];
     }
 
